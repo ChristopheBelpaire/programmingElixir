@@ -1,0 +1,11 @@
+defmodule MyList do
+  def span(from, to), do: _span([], from, to)
+
+  defp _span(a, from, to ) when from>to do
+    a
+  end
+
+  defp _span(a, from, to) do
+    _span(a++[from], from+1, to)
+  end
+end

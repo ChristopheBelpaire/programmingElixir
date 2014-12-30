@@ -1,0 +1,9 @@
+defmodule MyList do
+  def caesar([c], n) do
+    c+n
+  end
+
+  def caesar([head |tail ], n) do
+    [head+ n] + caesar(tail)
+  end
+end

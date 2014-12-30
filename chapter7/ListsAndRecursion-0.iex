@@ -1,0 +1,9 @@
+defmodule MyList do
+  def sum([]) do
+    0
+  end
+
+  def sum([head |tail ])
+    head + sum(tail)
+  end
+end

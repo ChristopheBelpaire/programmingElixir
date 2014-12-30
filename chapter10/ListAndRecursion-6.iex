@@ -1,0 +1,18 @@
+defmodule MyList do
+  def flatten(list) do
+    _flatten(list, [])
+  end
+
+  defp _flatten([], result) do
+    result
+  end
+
+  defp _flatten([head|tail], result) when is_list(head) do
+    result ++ _flatten(head, result) ++ _flatten(tail, result)
+  end
+
+  defp _flatten([head|tail], result) do
+    result ++ [head] ++ _flatten(tail, result)
+  end
+
+end
