@@ -1,0 +1,5 @@
+:erlang.float_to_binary(7.123,[{:decimals,2}])
+System.get_env("PATH")
+Path.extname("dave/test.exs")
+File.cwd()
+System.cmd("date")
